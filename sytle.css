@@ -144,3 +144,26 @@ header {
   }
 }
 /* end of mission */
+
+/* collection */
+.card-shadow {
+  box-shadow: 5px 8px 20px #444;
+}
+
+.card-heading {
+  position: absolute;
+  top: 70%;
+  right: 0%;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+
+.card-heading:hover {
+  opacity: 1;
+  transform: translateY(-7px);
+}
+/* end of collection */
