@@ -347,3 +347,17 @@ header {
 }
 
 /* end of contat  */
+
+/* footer */
+.footer-link {
+  color: #eee;
+  font-size: 13px;
+  transition: all 0.3s;
+}
+
+.footer-link:hover {
+  color: #70aed2;
+  text-decoration: none;
+}
+
+/* end of footer */
