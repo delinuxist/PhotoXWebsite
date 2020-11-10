@@ -15,7 +15,7 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     let position = $(this).scrollTop();
-    console.log(position);
+
     if (position >= 600) {
       $(".camera-img").addClass("fromLeft");
       $(".mission-text").addClass("fromRight");
@@ -23,5 +23,36 @@ $(document).ready(function () {
       $(".camera-img").removeClass("fromLeft");
       $(".mission-text").removeClass("fromRight");
     }
+  });
+
+  $(".gallery-list-item").click(function () {
+    let value = $(this).attr("data-filter");
+    switch (value) {
+      case "all":
+        $(".filter").show(300);
+        break;
+      case "new":
+        $(".new").show(300);
+        $(".filter")
+          .not("." + value)
+          .hide(300);
+        break;
+      case "free":
+        $(".free").show(300);
+        $(".filter")
+          .not("." + value)
+          .hide(300);
+        break;
+      case "pro":
+        $(".pro").show(300);
+        $(".filter")
+          .not("." + value)
+          .hide(300);
+        break;
+    }
+  });
+
+  $(".gallery-list-item").click(function () {
+    $(this).addClass("active-item").siblings().removeClass("active-item");
   });
 });
