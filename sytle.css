@@ -167,3 +167,30 @@ header {
   transform: translateY(-7px);
 }
 /* end of collection */
+
+/* gallery */
+.underline-dark {
+  width: 150px;
+  border: 3px solid #888;
+  margin: auto;
+}
+
+.gallery-list-item {
+  cursor: pointer;
+  color: #777;
+  user-select: none;
+}
+
+.active-item {
+  color: #70aed2;
+}
+
+.filter {
+  box-shadow: 2px 5px 8px #777;
+}
+
+.filter:hover {
+  transform: translateY(-3px);
+}
+
+/* end of gallery */
